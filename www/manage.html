@@ -67,21 +67,22 @@
         <label for="location">Location:</label>
         <input class="toLS" type="text" name="location" id="location" placeholder="prs" />
       </div>
-      <a href="index.html" data-role="button" data-theme="e" data-prefetch>Done</a>
+      <a href="index.html" data-role="button" data-theme="e">Done</a>
       <button id="clear_ls" data-theme="a" data-icon="delete" data-iconpos="right">Wipe out my data</button>
     </div>
     <div data-role="footer"><h4>EpiPass - Adnan RIHAN</h4></div>
     <script>
-			put_info_in_id();
-      $('.toLS').keyup(function(){
-        var thisId = $(this).attr('id');
-        userInfo[thisId] = $(this).val();
-        save_userinfo();
-      });
-			$('#clear_ls').click(function(){
-				localStorage.clear();
-				window.location = "init.html";
-			});
+    	put_info_in_id();
+    	$('.toLS').keyup(function(){
+    		var thisId = $(this).attr('id');
+       	 	userInfo[thisId] = $(this).val();
+       	 	save_userinfo();
+       	 	put_info_in_class();
+      	});
+		$('#clear_ls').click(function(){
+			localStorage.clear();
+			window.location = "init.html";
+		});
     </script>
   </div>
 </body>
