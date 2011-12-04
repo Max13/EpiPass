@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>EpiPass</title>
+  <meta
+     name="viewport"
+     content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <link rel="stylesheet" href="./css/jquery.mobile.css" />
+  <script src="./js/jquery.js"></script>
+  <script src="./js/jquery.mobile.js"></script>
+  <script src="./js/functions.js"></script>
+</head>
+<body>
+  <script>
+    var userInfo;
+    var userJson;
+    init_userinfo();
+    if (!userJson)
+      window.location = 'init.html';
+  </script>
+  <div data-role="page"> 
+    <div data-role="header">
+      <a href="diag_export.html" data-icon="info" data-rel="dialog" data-transition="slidedown" data-prefetch>Export</a>
+      <h1>Home</h1>
+      <a href="manage.html" data-icon="gear" data-iconpos="right" data-prefetch>Config</a>
+    </div> 
+    <div data-role="content">
+      <h2>Welcome back, <span class="nick"></span></h2>
+      <h3>What do you want to do, today ?</h3>
+      <div data-role="collapsible-set">
+	<div data-role="collapsible" data-theme="a" data-content-theme="a">
+	  <h3>Open a door</h3>
+	  <p>Go in front of the digicode and enter these info:</p>
+	  <p>
+	    UID: <span class="uid"></span><br />
+	    Pass: <span class="pwd_num"></span>
+	  </p>
+	</div>
+	<div data-role="collapsible" data-theme="b" data-content-theme="b">
+          <h3>Connect to the Wifi (Unix/Linux)</h3>
+	  <p>Open your WiFi menu, look for "iit-wifi":</p>
+          <p>
+            Security: <strong>WPA & WPA2 Enterprise</strong><br />
+	    Authentication: <strong>Protected EAP (PEAP)</strong><br />
+            Inner authentication: <strong>MSCHAPv2</strong><br />
+	    Username: <span class="login"></span><br />
+	    Password: <span class="pwd_socks"></span>
+          </p>
+        </div>
+	<div data-role="collapsible" data-theme="c" data-content-theme="c">
+          <h3>Connect to NetSoul</h3>
+          <p>
+            Server's hostname: <strong>ns-server.epita.fr</strong><br />
+            Server port: <strong>4242</strong><br />
+            Login: <span class="login"></span><br />
+            Password: <span class="pwd_socks"></span>
+          </p>
+        </div>
+	<div data-role="collapsible" data-theme="d" data-content-theme="d">
+          <h3>Connect to an Intranet</h3>
+	  <p>
+	    Login: <span class="login"></span><br />
+            Password: <span class="pwd_ppp"></span>
+	  </p>
+        </div>
+	<div data-role="collapsible" data-theme="e" data-content-theme="e">
+          <h3>Connect to your Outlook.com account</h3>
+	  <p>Go to <strong>http://www.outlook.com/owa</strong> with your browser:</p>
+	  <p>
+	    Username: <span class="email"></span>@epitech.eu<br />
+	    Password: <span class="pwd_ppp"</span>
+	  </p>
+        </div>
+      </div>
+    </div>
+    <div data-role="footer"><h4>EpiPass - Adnan RIHAN</h4></div>
+    <script>
+      $('span').html("<strong>Not set</strong>");
+      put_info_in_class();
+    </script>
+  </div>
+
+  <!--
+  <div data-role="page" id="export">
+    <div data-role="header"><h1>EpiPass</h1></div>
+    <div data-role="content">
+      <h2>Wanna Import/Export ?</h2>
+      <p>
+	In order to use EpiPass on multiple device, including Desktop computers, here is your string. This line contains everything saved on your device, and is used to print your information on the home page.<br />
+	<em>You shouldn't edit this line manually, unless you know JSON, Javascript and coding.</em>
+      </p>
+      <p>
+	You want to <strong>Export</strong> your data ?<br />
+	You just have to copy this line, send it to you by email and paste it in the same line, on the other device !
+      </p>
+      <p>
+	You want to <strong>Import</strong> your data ?<br />
+	You just have to paste here, your previously saved data and replace this line !
+      </p>
+      <div data-role="fieldcontain" class="ui-hide-label">
+	<label for="localStorageString">Data String:</label>
+	<textarea name="localStorageString" id="localStorageString"></textarea>
+      </div>
+    </div>
+    <script>
+      $('#localStorageString').html(userJson);
+      $('#localStorageString').keyup(function(){
+        userJson = $(this).val();
+        localStorage.setItem('userInfo', userJson);
+        userInfo = JSON.parse(userJson);
+        for (x in userInfo)
+          $('span.'+x).html('<strong>'+userInfo[x]+'</strong>');
+      });
+    </script>
+  </div>
+  -->
+</body>
+</html>

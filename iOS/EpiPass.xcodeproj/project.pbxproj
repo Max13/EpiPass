@@ -1,0 +1,489 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C0E8ADF148A9CF1000198F9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C0E8ADE148A9CF1000198F9 /* Foundation.framework */; };
+		0C0E8AE1148A9CF1000198F9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C0E8AE0148A9CF1000198F9 /* UIKit.framework */; };
+		0C0E8AE3148A9CF1000198F9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C0E8AE2148A9CF1000198F9 /* CoreGraphics.framework */; };
+		0C0E8AE5148A9CF1000198F9 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C0E8AE4148A9CF1000198F9 /* AddressBook.framework */; };
+		0C0E8AE7148A9CF1000198F9 /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C0E8AE6148A9CF1000198F9 /* AddressBookUI.framework */; };
+		0C0E8AE9148A9CF1000198F9 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C0E8AE8148A9CF1000198F9 /* AudioToolbox.framework */; };
+		0C0E8AEB148A9CF1000198F9 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C0E8AEA148A9CF1000198F9 /* AVFoundation.framework */; };
+		0C0E8AED148A9CF1000198F9 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C0E8AEC148A9CF1000198F9 /* CoreLocation.framework */; };
+		0C0E8AEF148A9CF1000198F9 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C0E8AEE148A9CF1000198F9 /* MediaPlayer.framework */; };
+		0C0E8AF1148A9CF1000198F9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C0E8AF0148A9CF1000198F9 /* QuartzCore.framework */; };
+		0C0E8AF3148A9CF1000198F9 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C0E8AF2148A9CF1000198F9 /* SystemConfiguration.framework */; };
+		0C0E8AF5148A9CF1000198F9 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C0E8AF4148A9CF1000198F9 /* MobileCoreServices.framework */; };
+		0C0E8AF7148A9CF1000198F9 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C0E8AF6148A9CF1000198F9 /* CoreMedia.framework */; };
+		0C0E8AFD148A9CF1000198F9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0C0E8AFB148A9CF1000198F9 /* InfoPlist.strings */; };
+		0C0E8AFF148A9CF1000198F9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C0E8AFE148A9CF1000198F9 /* main.m */; };
+		0C0E8B02148A9CF1000198F9 /* PhoneGap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C0E8B01148A9CF1000198F9 /* PhoneGap.framework */; };
+		0C0E8B07148A9CF1000198F9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0C0E8B05148A9CF1000198F9 /* Localizable.strings */; };
+		0C0E8B0B148A9CF1000198F9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0C0E8B09148A9CF1000198F9 /* Localizable.strings */; };
+		0C0E8B0E148A9CF1000198F9 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C0E8B0D148A9CF1000198F9 /* icon.png */; };
+		0C0E8B10148A9CF1000198F9 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C0E8B0F148A9CF1000198F9 /* icon@2x.png */; };
+		0C0E8B12148A9CF1000198F9 /* icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C0E8B11148A9CF1000198F9 /* icon-72.png */; };
+		0C0E8B15148A9CF1000198F9 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C0E8B14148A9CF1000198F9 /* Default.png */; };
+		0C0E8B17148A9CF1000198F9 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C0E8B16148A9CF1000198F9 /* Default@2x.png */; };
+		0C0E8B19148A9CF1000198F9 /* Capture.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0C0E8B18148A9CF1000198F9 /* Capture.bundle */; };
+		0C0E8B1B148A9CF1000198F9 /* PhoneGap.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0C0E8B1A148A9CF1000198F9 /* PhoneGap.plist */; };
+		0C0E8B1F148A9CF1000198F9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C0E8B1E148A9CF1000198F9 /* AppDelegate.m */; };
+		0C7792C7148BA1A4004597E3 /* www in Resources */ = {isa = PBXBuildFile; fileRef = 0C7792C6148BA1A4004597E3 /* www */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0C0E8ADA148A9CF1000198F9 /* EpiPass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EpiPass.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C0E8ADE148A9CF1000198F9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0C0E8AE0148A9CF1000198F9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		0C0E8AE2148A9CF1000198F9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0C0E8AE4148A9CF1000198F9 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		0C0E8AE6148A9CF1000198F9 /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
+		0C0E8AE8148A9CF1000198F9 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		0C0E8AEA148A9CF1000198F9 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		0C0E8AEC148A9CF1000198F9 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		0C0E8AEE148A9CF1000198F9 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		0C0E8AF0148A9CF1000198F9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		0C0E8AF2148A9CF1000198F9 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		0C0E8AF4148A9CF1000198F9 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		0C0E8AF6148A9CF1000198F9 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		0C0E8AFA148A9CF1000198F9 /* EpiPass-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EpiPass-Info.plist"; sourceTree = "<group>"; };
+		0C0E8AFC148A9CF1000198F9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0C0E8AFE148A9CF1000198F9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0C0E8B00148A9CF1000198F9 /* EpiPass-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EpiPass-Prefix.pch"; sourceTree = "<group>"; };
+		0C0E8B01148A9CF1000198F9 /* PhoneGap.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PhoneGap.framework; path = /Users/Shared/PhoneGap/Frameworks/PhoneGap.framework; sourceTree = "<absolute>"; };
+		0C0E8B06148A9CF1000198F9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Resources/en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		0C0E8B0A148A9CF1000198F9 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = Resources/es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		0C0E8B0D148A9CF1000198F9 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = Resources/icons/icon.png; sourceTree = "<group>"; };
+		0C0E8B0F148A9CF1000198F9 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon@2x.png"; path = "Resources/icons/icon@2x.png"; sourceTree = "<group>"; };
+		0C0E8B11148A9CF1000198F9 /* icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-72.png"; path = "Resources/icons/icon-72.png"; sourceTree = "<group>"; };
+		0C0E8B14148A9CF1000198F9 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = Resources/splash/Default.png; sourceTree = "<group>"; };
+		0C0E8B16148A9CF1000198F9 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "Resources/splash/Default@2x.png"; sourceTree = "<group>"; };
+		0C0E8B18148A9CF1000198F9 /* Capture.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Capture.bundle; path = Resources/Capture.bundle; sourceTree = "<group>"; };
+		0C0E8B1A148A9CF1000198F9 /* PhoneGap.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PhoneGap.plist; sourceTree = "<group>"; };
+		0C0E8B1D148A9CF1000198F9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Classes/AppDelegate.h; sourceTree = "<group>"; };
+		0C0E8B1E148A9CF1000198F9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Classes/AppDelegate.m; sourceTree = "<group>"; };
+		0C0E8B21148A9CF1000198F9 /* README */ = {isa = PBXFileReference; lastKnownFileType = text; name = README; path = Plugins/README; sourceTree = "<group>"; };
+		0C7792C6148BA1A4004597E3 /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; name = www; path = ../www; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0C0E8AD4148A9CF1000198F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C0E8ADF148A9CF1000198F9 /* Foundation.framework in Frameworks */,
+				0C0E8AE1148A9CF1000198F9 /* UIKit.framework in Frameworks */,
+				0C0E8AE3148A9CF1000198F9 /* CoreGraphics.framework in Frameworks */,
+				0C0E8AE5148A9CF1000198F9 /* AddressBook.framework in Frameworks */,
+				0C0E8AE7148A9CF1000198F9 /* AddressBookUI.framework in Frameworks */,
+				0C0E8AE9148A9CF1000198F9 /* AudioToolbox.framework in Frameworks */,
+				0C0E8AEB148A9CF1000198F9 /* AVFoundation.framework in Frameworks */,
+				0C0E8AED148A9CF1000198F9 /* CoreLocation.framework in Frameworks */,
+				0C0E8AEF148A9CF1000198F9 /* MediaPlayer.framework in Frameworks */,
+				0C0E8AF1148A9CF1000198F9 /* QuartzCore.framework in Frameworks */,
+				0C0E8AF3148A9CF1000198F9 /* SystemConfiguration.framework in Frameworks */,
+				0C0E8AF5148A9CF1000198F9 /* MobileCoreServices.framework in Frameworks */,
+				0C0E8AF7148A9CF1000198F9 /* CoreMedia.framework in Frameworks */,
+				0C0E8B02148A9CF1000198F9 /* PhoneGap.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C0E8AD7148A9CF1000198F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0C0E8ACC148A9CF0000198F9 = {
+			isa = PBXGroup;
+			children = (
+				0C7792C6148BA1A4004597E3 /* www */,
+				0C0E8AF8148A9CF1000198F9 /* EpiPass */,
+				0C0E8ADD148A9CF1000198F9 /* Frameworks */,
+				0C0E8ADB148A9CF1000198F9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0C0E8ADB148A9CF1000198F9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0C0E8ADA148A9CF1000198F9 /* EpiPass.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0C0E8ADD148A9CF1000198F9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0C0E8ADE148A9CF1000198F9 /* Foundation.framework */,
+				0C0E8AE0148A9CF1000198F9 /* UIKit.framework */,
+				0C0E8AE2148A9CF1000198F9 /* CoreGraphics.framework */,
+				0C0E8AE4148A9CF1000198F9 /* AddressBook.framework */,
+				0C0E8AE6148A9CF1000198F9 /* AddressBookUI.framework */,
+				0C0E8AE8148A9CF1000198F9 /* AudioToolbox.framework */,
+				0C0E8AEA148A9CF1000198F9 /* AVFoundation.framework */,
+				0C0E8AEC148A9CF1000198F9 /* CoreLocation.framework */,
+				0C0E8AEE148A9CF1000198F9 /* MediaPlayer.framework */,
+				0C0E8AF0148A9CF1000198F9 /* QuartzCore.framework */,
+				0C0E8AF2148A9CF1000198F9 /* SystemConfiguration.framework */,
+				0C0E8AF4148A9CF1000198F9 /* MobileCoreServices.framework */,
+				0C0E8AF6148A9CF1000198F9 /* CoreMedia.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0C0E8AF8148A9CF1000198F9 /* EpiPass */ = {
+			isa = PBXGroup;
+			children = (
+				0C0E8B01148A9CF1000198F9 /* PhoneGap.framework */,
+				0C0E8B03148A9CF1000198F9 /* Resources */,
+				0C0E8B1C148A9CF1000198F9 /* Classes */,
+				0C0E8B20148A9CF1000198F9 /* Plugins */,
+				0C0E8AF9148A9CF1000198F9 /* Supporting Files */,
+			);
+			path = EpiPass;
+			sourceTree = "<group>";
+		};
+		0C0E8AF9148A9CF1000198F9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0C0E8AFA148A9CF1000198F9 /* EpiPass-Info.plist */,
+				0C0E8AFB148A9CF1000198F9 /* InfoPlist.strings */,
+				0C0E8AFE148A9CF1000198F9 /* main.m */,
+				0C0E8B00148A9CF1000198F9 /* EpiPass-Prefix.pch */,
+				0C0E8B1A148A9CF1000198F9 /* PhoneGap.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0C0E8B03148A9CF1000198F9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0C0E8B18148A9CF1000198F9 /* Capture.bundle */,
+				0C0E8B04148A9CF1000198F9 /* en.lproj */,
+				0C0E8B08148A9CF1000198F9 /* es.lproj */,
+				0C0E8B0C148A9CF1000198F9 /* icons */,
+				0C0E8B13148A9CF1000198F9 /* splash */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		0C0E8B04148A9CF1000198F9 /* en.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				0C0E8B05148A9CF1000198F9 /* Localizable.strings */,
+			);
+			name = en.lproj;
+			sourceTree = "<group>";
+		};
+		0C0E8B08148A9CF1000198F9 /* es.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				0C0E8B09148A9CF1000198F9 /* Localizable.strings */,
+			);
+			name = es.lproj;
+			sourceTree = "<group>";
+		};
+		0C0E8B0C148A9CF1000198F9 /* icons */ = {
+			isa = PBXGroup;
+			children = (
+				0C0E8B0D148A9CF1000198F9 /* icon.png */,
+				0C0E8B0F148A9CF1000198F9 /* icon@2x.png */,
+				0C0E8B11148A9CF1000198F9 /* icon-72.png */,
+			);
+			name = icons;
+			sourceTree = "<group>";
+		};
+		0C0E8B13148A9CF1000198F9 /* splash */ = {
+			isa = PBXGroup;
+			children = (
+				0C0E8B14148A9CF1000198F9 /* Default.png */,
+				0C0E8B16148A9CF1000198F9 /* Default@2x.png */,
+			);
+			name = splash;
+			sourceTree = "<group>";
+		};
+		0C0E8B1C148A9CF1000198F9 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				0C0E8B1D148A9CF1000198F9 /* AppDelegate.h */,
+				0C0E8B1E148A9CF1000198F9 /* AppDelegate.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		0C0E8B20148A9CF1000198F9 /* Plugins */ = {
+			isa = PBXGroup;
+			children = (
+				0C0E8B21148A9CF1000198F9 /* README */,
+			);
+			name = Plugins;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0C0E8AD9148A9CF1000198F9 /* EpiPass */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C0E8B24148A9CF1000198F9 /* Build configuration list for PBXNativeTarget "EpiPass" */;
+			buildPhases = (
+				0C0E8AD3148A9CF1000198F9 /* Sources */,
+				0C0E8AD4148A9CF1000198F9 /* Frameworks */,
+				0C0E8AD5148A9CF1000198F9 /* Resources */,
+				0C0E8AD6148A9CF1000198F9 /* Sources */,
+				0C0E8AD7148A9CF1000198F9 /* Frameworks */,
+				0C0E8AD8148A9CF1000198F9 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EpiPass;
+			productName = EpiPass;
+			productReference = 0C0E8ADA148A9CF1000198F9 /* EpiPass.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0C0E8ACE148A9CF0000198F9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "Virtual-Info";
+			};
+			buildConfigurationList = 0C0E8AD1148A9CF1000198F9 /* Build configuration list for PBXProject "EpiPass" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				es,
+			);
+			mainGroup = 0C0E8ACC148A9CF0000198F9;
+			productRefGroup = 0C0E8ADB148A9CF1000198F9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0C0E8AD9148A9CF1000198F9 /* EpiPass */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0C0E8AD5148A9CF1000198F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C0E8AFD148A9CF1000198F9 /* InfoPlist.strings in Resources */,
+				0C0E8B07148A9CF1000198F9 /* Localizable.strings in Resources */,
+				0C0E8B0B148A9CF1000198F9 /* Localizable.strings in Resources */,
+				0C0E8B0E148A9CF1000198F9 /* icon.png in Resources */,
+				0C0E8B10148A9CF1000198F9 /* icon@2x.png in Resources */,
+				0C0E8B12148A9CF1000198F9 /* icon-72.png in Resources */,
+				0C0E8B15148A9CF1000198F9 /* Default.png in Resources */,
+				0C0E8B17148A9CF1000198F9 /* Default@2x.png in Resources */,
+				0C0E8B19148A9CF1000198F9 /* Capture.bundle in Resources */,
+				0C0E8B1B148A9CF1000198F9 /* PhoneGap.plist in Resources */,
+				0C7792C7148BA1A4004597E3 /* www in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0C0E8AD8148A9CF1000198F9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "\n\t\t\t\t\t\t\t\tif [ ! -d \"$PROJECT_DIR/www\" ] ; then\n\t\t\t\t\t\t\t\t\tcp -R /Users/Shared/PhoneGap/Frameworks/PhoneGap.framework/www \"$PROJECT_DIR\"\n\t\t\t\t\t\t\t\tfi\n\t\t\t\t\t\t\t\t# detect www folder reference in project, if missing, print warning\n\t\t\t\t\t\t\t\tgrep \"{isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = \\\"<group>\\\"; };\" \"$PROJECT_DIR/$PROJECT_NAME.xcodeproj/project.pbxproj\"\n\t\t\t\t\t\t\t\trc=$? \n\t\t\t\t\t\t\t\tif [ $rc != 0 ] ; then\n\t\t\t\t\t\t\t\techo -e \"warning: Missing - Add $PROJECT_DIR/www as a folder reference in your project. Just drag and drop the folder into your project, into the Project Navigator of Xcode 4. Make sure you select the second radio-button: 'Create folder references for any added folders' (which will create a blue folder)\" 1>&2\n\t\t\t\t\t\t\t\tfi\t\t\t\t\t\t\t";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0C0E8AD3148A9CF1000198F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C0E8AFF148A9CF1000198F9 /* main.m in Sources */,
+				0C0E8B1F148A9CF1000198F9 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C0E8AD6148A9CF1000198F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0C0E8AFB148A9CF1000198F9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0C0E8AFC148A9CF1000198F9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0C0E8B05148A9CF1000198F9 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0C0E8B06148A9CF1000198F9 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		0C0E8B09148A9CF1000198F9 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0C0E8B0A148A9CF1000198F9 /* es */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0C0E8B22148A9CF1000198F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0C0E8B23148A9CF1000198F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0C0E8B25148A9CF1000198F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = /Users/Shared/PhoneGap/Frameworks;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EpiPass/EpiPass-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = "PHONEGAP_FRAMEWORK=YES";
+				INFOPLIST_FILE = "EpiPass/EpiPass-Info.plist";
+				OTHER_LDFLAGS = (
+					"-weak_framework",
+					UIKit,
+					"-weak_framework",
+					AVFoundation,
+					"-weak_framework",
+					CoreMedia,
+					"-weak_library",
+					/usr/lib/libSystem.B.dylib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		0C0E8B26148A9CF1000198F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = /Users/Shared/PhoneGap/Frameworks;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EpiPass/EpiPass-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = "PHONEGAP_FRAMEWORK=YES";
+				INFOPLIST_FILE = "EpiPass/EpiPass-Info.plist";
+				OTHER_LDFLAGS = (
+					"-weak_framework",
+					UIKit,
+					"-weak_framework",
+					AVFoundation,
+					"-weak_framework",
+					CoreMedia,
+					"-weak_library",
+					/usr/lib/libSystem.B.dylib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0C0E8AD1148A9CF1000198F9 /* Build configuration list for PBXProject "EpiPass" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C0E8B22148A9CF1000198F9 /* Debug */,
+				0C0E8B23148A9CF1000198F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0C0E8B24148A9CF1000198F9 /* Build configuration list for PBXNativeTarget "EpiPass" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C0E8B25148A9CF1000198F9 /* Debug */,
+				0C0E8B26148A9CF1000198F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0C0E8ACE148A9CF0000198F9 /* Project object */;
+}
