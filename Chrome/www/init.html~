@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>EpiPass</title>
+  <meta
+     name="viewport"
+     content="width=device-width, initial-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="./css/jquery.mobile.css" />
+  <script src="./js/jquery.js"></script>
+  <script src="./js/jquery.mobile.js"></script>
+  <script src="./js/functions.js"></script>
+</head>
+<body>
+  <script>
+    var userInfo;
+    var userJson;
+	init_userinfo();
+	if (userInfo.nick)
+		window.location = "manage.html";
+  </script>
+  <div data-role="page"> 
+    <div data-role="header"><h1>First visit</h1></div> 
+    <div data-role="content">
+      <p>Hi <strong>unknown !</strong></p>
+      <p>
+	Seems to be your first visit...?<br />
+	Or not, if you've deleted you account.
+      </p>
+      <p>
+	So, EpiPass Manager is an Epitech password manager.<br />
+	Think about it, you know all your passwords. A day you come at Epitech ans see "Please enter UID" on the door... What's that shit ?? I don't know, neither...
+      </p>
+      <p>
+	But, something I know, it that if you saved your passwords on your mobile, you wouldn't have to worry again about forgetting your sheet at home !<br />
+	Again, don't worry about your passwords, they're written locally with LocalStorage (By Javascript) and will never be transferred anywhere, so don't even fear any packet tracer =D
+      </p>
+      <p>If you're ready, say it by clicking below !</p>
+      <a href="diag_meeting.html" data-role="button" data-rel="dialog" data-transition="slideup" data-icon="arrow-r" data-iconpos="right" data-theme="b">I'm ready sir !</a>
+    </div>
+    <div data-role="footer"><h4>EpiPass - Adnan RIHAN</h4></div>
+  </div>
+</body>
+</html>
