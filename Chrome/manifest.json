@@ -22,16 +22,7 @@
 	"128": "icons/icon_128.png"
     },
 
-    /*
-    "app":
-    {
-	"launch":
-	{
-	    "local_path": "www/index.html",
-	    "container": "panel"
-	}
-    },
-    */
+	// Others
     "browser_action":
     {
 	"default_icon": "icons/icon_22.png",
