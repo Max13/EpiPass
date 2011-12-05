@@ -5,7 +5,7 @@
 ** Login   <rihan_a@epitech.net>
 ** 
 ** Started on  Mon Dec  5 09:22:31 2011 adnan rihan
-   Last update Mon Dec  5 10:06:42 2011 adnan rihan
+   Last update Mon Dec  5 23:37:51 2011 adnan rihan
 */
 
 {
@@ -28,9 +28,7 @@
 	"launch":
 	{
 	    "local_path": "www/index.html",
-	    "container": "panel",
-	    "height": 600,
-	    "width": 400
+	    "container": "panel"
 	}
     },
     */
