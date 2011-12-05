@@ -78,6 +78,10 @@
     </div>
     <div data-role="footer"><h4>EpiPass - Adnan RIHAN</h4></div>
     <script>
+      $('div[data-role=collapsible]').click(function(){
+        var pos_y = $(this).offset().top;
+        $("html, body").animate({ scrollTop: pos_y }, "slow");
+      });
       $('span.toInit').html("<strong>Not set</strong>");
       put_info_in_class();
     </script>
