@@ -16,8 +16,17 @@ function	save_userinfo()
 
 function	put_info_in_class()
 {
-	for (x in userInfo)
-  		$('.'+x).html('<strong>'+userInfo[x]+'</strong>');
+    var $phpjs = new PHP_JS();
+    var str;
+    for (x in userInfo)
+    {
+	if (userInfo[x])
+	{
+	    str = $phpjs.htmlentities(userInfo[x]);
+  	    $('.'+x).html('<strong>'+str+'</strong>');
+	    str = '';
+	}
+    }
 }
 
 function	put_info_in_id()

@@ -14,11 +14,11 @@
   <script>
     var userInfo;
     var userJson;
-	init_userinfo();
-	if (!userInfo.nick)
-		window.location = "init.html";
+    init_userinfo();
+    if (!userInfo.nick)
+      window.location = "init.html";
   </script>
-	<div data-role="page">
+  <div data-role="page">
     <div data-role="header"><h1>Manage</h1></div>
     <div data-role="content">
       <h1>Please fill you password sheet:</h1>
@@ -74,15 +74,15 @@
     <script>
     	put_info_in_id();
     	$('.toLS').keyup(function(){
-    		var thisId = $(this).attr('id');
-       	 	userInfo[thisId] = $(this).val();
-       	 	save_userinfo();
-       	 	put_info_in_class();
+    	  var thisId = $(this).attr('id');
+       	  userInfo[thisId] = $(this).val();
+       	  save_userinfo();
+       	  put_info_in_class();
       	});
-		$('#clear_ls').click(function(){
-			localStorage.clear();
-			window.location = "init.html";
-		});
+	$('#clear_ls').click(function(){
+	  localStorage.clear();
+	  window.location = "init.html";
+	});
     </script>
   </div>
 </body>

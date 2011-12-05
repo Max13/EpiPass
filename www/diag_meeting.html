@@ -14,11 +14,11 @@
   <script>
     var userInfo;
     var userJson;
-	init_userinfo();
-	if (userJson)
-		window.location = "manage.html";
+    init_userinfo();
+    if (userJson)
+      window.location = "manage.html"
   </script>
-	<div data-role="page">
+  <div data-role="page">
     <div data-role="header"><h1>Meeting</h1></div>
     <div data-role="content">
       <h1>READY ?!</h1>
@@ -33,7 +33,7 @@
     <script>
       $('#nick').keyup(function(){
         userInfo.nick = $(this).val();
-				save_userinfo();
+        save_userinfo();
       });
     </script>
   </div>
